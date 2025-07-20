@@ -1,0 +1,19 @@
+{
+  "name": "Empty to Empty",
+  "description": "Test handling of empty source and target files",
+  "category": "empty-files",
+  "expected_behavior": "success",
+  "test_objectives": [
+    "Verify handling of zero-length source file",
+    "Verify handling of zero-length target file", 
+    "Verify minimal VCDIFF structure parsing",
+    "Verify VCD_ADLER32 checksum with empty data"
+  ],
+  "expected_properties": {
+    "source_size": 0,
+    "target_size": 0,
+    "has_checksum": true,
+    "instruction_count": 0,
+    "window_count": 0
+  }
+}

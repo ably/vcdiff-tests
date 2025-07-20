@@ -1,0 +1,9 @@
+{
+  "description": "RUN instruction test for codetable entry 0",
+  "source_description": "Empty file",
+  "target_description": "File with 5 repeated 'A' bytes",
+  "delta_description": "Single RUN instruction (codetable entry 0)",
+  "test_type": "targeted_positive",
+  "codetable_range": "0",
+  "instruction_type": "RUN"
+}

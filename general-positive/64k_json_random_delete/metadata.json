@@ -1,0 +1,11 @@
+{
+  "description": "General positive test: 64k_json_random with delete modification",
+  "source_description": "Base file: 64k_json_random",
+  "target_description": "Modified with delete (~25% change)",
+  "delta_description": "VCDIFF delta for delete modification",
+  "test_type": "general_positive",
+  "base_file_type": "json",
+  "modification_type": "delete",
+  "base_size": 56760,
+  "target_size": 42550
+}

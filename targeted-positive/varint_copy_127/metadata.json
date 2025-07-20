@@ -1,0 +1,10 @@
+{
+  "description": "COPY instruction with 127 bytes (varint boundary test)",
+  "source_description": "File with 127 random bytes",
+  "target_description": "Identical file with 127 random bytes",
+  "delta_description": "Single COPY instruction copying 127 bytes from source",
+  "test_type": "targeted_positive",
+  "varint_boundary": true,
+  "byte_count": 127,
+  "instruction_type": "COPY"
+}

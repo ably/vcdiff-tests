@@ -1,0 +1,9 @@
+{
+  "description": "COPY instruction test for codetable entries 19-162",
+  "source_description": "File with 'ABCDEFGH' text",
+  "target_description": "Identical file with 'ABCDEFGH' text", 
+  "delta_description": "Single COPY instruction (codetable entries 19-162)",
+  "test_type": "targeted_positive",
+  "codetable_range": "19-162",
+  "instruction_type": "COPY"
+}

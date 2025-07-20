@@ -1,0 +1,11 @@
+{
+  "description": "RUN instruction with 2097151 bytes (varint boundary test)",
+  "source_description": "Empty file",
+  "target_description": "File with 2097151 repetitions of byte 0x30",
+  "delta_description": "Single RUN instruction repeating byte 2097151 times",
+  "test_type": "targeted_positive",
+  "varint_boundary": true,
+  "byte_count": 2097151,
+  "instruction_type": "RUN",
+  "repeated_byte": "0x30"
+}

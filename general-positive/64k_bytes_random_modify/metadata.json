@@ -1,0 +1,11 @@
+{
+  "description": "General positive test: 64k_bytes_random with modify modification",
+  "source_description": "Base file: 64k_bytes_random",
+  "target_description": "Modified with modify (~25% change)",
+  "delta_description": "VCDIFF delta for modify modification",
+  "test_type": "general_positive",
+  "base_file_type": "binary",
+  "modification_type": "modify",
+  "base_size": 65536,
+  "target_size": 65536
+}

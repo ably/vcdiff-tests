@@ -1,0 +1,9 @@
+{
+  "description": "ADD instruction with 16383 bytes (varint boundary test)",
+  "source_description": "Empty file",
+  "target_description": "File with 16383 random bytes",
+  "delta_description": "Single ADD instruction adding 16383 bytes",
+  "test_type": "targeted_positive",
+  "varint_boundary": true,
+  "byte_count": 16383
+}

@@ -1,0 +1,9 @@
+{
+  "description": "ADD instruction with 0 bytes (varint boundary test)",
+  "source_description": "Empty file",
+  "target_description": "File with 0 random bytes",
+  "delta_description": "Single ADD instruction adding 0 bytes",
+  "test_type": "targeted_positive",
+  "varint_boundary": true,
+  "byte_count": 0
+}

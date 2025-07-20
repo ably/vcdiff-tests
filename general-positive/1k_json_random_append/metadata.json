@@ -1,0 +1,11 @@
+{
+  "description": "General positive test: 1k_json_random with append modification",
+  "source_description": "Base file: 1k_json_random",
+  "target_description": "Modified with append (~25% change)",
+  "delta_description": "VCDIFF delta for append modification",
+  "test_type": "general_positive",
+  "base_file_type": "json",
+  "modification_type": "append",
+  "base_size": 1279,
+  "target_size": 1549
+}

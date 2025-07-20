@@ -1,0 +1,9 @@
+{
+  "description": "Combined ADD+COPY instruction test for codetable entries 235-246",
+  "source_description": "File with test data for same cache modes",
+  "target_description": "File with 'NEW' added + copied content",
+  "delta_description": "Combined ADD+COPY instructions (modes 6-8, entries 235-246)",
+  "test_type": "targeted_positive", 
+  "codetable_range": "235-246",
+  "instruction_type": "ADD+COPY"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Unchanged File Copy",
+  "description": "Test copying identical 512-byte file using COPY instruction",
+  "category": "basic-operations",
+  "expected_behavior": "success",
+  "test_objectives": [
+    "Verify COPY instruction with mode 0 (SELF)",
+    "Verify source data referencing",
+    "Verify VCD_SOURCE window indicator", 
+    "Verify VCD_ADLER32 checksum validation",
+    "Verify efficient encoding of unchanged content"
+  ],
+  "expected_properties": {
+    "source_size": 512,
+    "target_size": 512,
+    "has_checksum": true,
+    "instruction_count": 1,
+    "window_count": 1,
+    "primary_instruction": "COPY"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "description": "COPY instruction address beyond source bounds",
+  "source_description": "Test source data",
+  "target_description": "Should not be reached - decoder should reject input",
+  "delta_description": "Invalid VCDIFF data designed to trigger specific error",
+  "test_type": "targeted_negative",
+  "expected_behavior": "error",
+  "expected_error": "ErrInvalidFormat",
+  "should_fail": true
+}

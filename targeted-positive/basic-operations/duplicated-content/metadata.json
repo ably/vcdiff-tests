@@ -1,0 +1,21 @@
+{
+  "name": "Duplicated Content",
+  "description": "Test copying source file twice to create doubled target using COPY instruction",
+  "category": "basic-operations",
+  "expected_behavior": "success",
+  "test_objectives": [
+    "Verify multiple COPY instructions referencing same source data",
+    "Verify efficient encoding of duplicated content",
+    "Verify COPY instruction with mode 0 (SELF)",
+    "Verify VCD_SOURCE window indicator",
+    "Verify VCD_ADLER32 checksum validation"
+  ],
+  "expected_properties": {
+    "source_size": 512,
+    "target_size": 1024,
+    "has_checksum": true,
+    "instruction_count": 2,
+    "window_count": 1,
+    "primary_instruction": "COPY"
+  }
+}

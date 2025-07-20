@@ -1,0 +1,19 @@
+{
+  "name": "Content to Empty",
+  "description": "Test transforming non-empty source to empty target",
+  "category": "basic-operations", 
+  "expected_behavior": "success",
+  "test_objectives": [
+    "Verify handling when target is empty but source is not",
+    "Verify minimal instruction set for empty target",
+    "Verify VCD_SOURCE window indicator",
+    "Verify VCD_ADLER32 checksum with empty target"
+  ],
+  "expected_properties": {
+    "source_size": 512,
+    "target_size": 0,
+    "has_checksum": true,
+    "instruction_count": 0,
+    "window_count": 1
+  }
+}

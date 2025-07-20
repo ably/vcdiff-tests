@@ -1,0 +1,16 @@
+{
+  "name": "Invalid Magic Header",
+  "description": "Test rejection of file with invalid magic bytes (should be VCD\\0)",
+  "category": "invalid-header",
+  "expected_behavior": "error",
+  "test_objectives": [
+    "Verify magic header validation",
+    "Verify early rejection of invalid format",
+    "Verify appropriate error message"
+  ],
+  "expected_error_type": "invalid_magic_header",
+  "expected_properties": {
+    "should_fail_fast": true,
+    "error_location": "header_parsing"
+  }
+}

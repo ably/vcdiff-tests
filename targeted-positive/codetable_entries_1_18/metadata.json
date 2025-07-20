@@ -1,0 +1,9 @@
+{
+  "description": "ADD instruction test for codetable entries 1-18",
+  "source_description": "Empty file", 
+  "target_description": "File with 'HELLO WORLD!' text",
+  "delta_description": "Single ADD instruction (codetable entries 1-18)",
+  "test_type": "targeted_positive",
+  "codetable_range": "1-18",
+  "instruction_type": "ADD"
+}

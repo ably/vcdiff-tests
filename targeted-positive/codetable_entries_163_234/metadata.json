@@ -1,0 +1,9 @@
+{
+  "description": "Combined ADD+COPY instruction test for codetable entries 163-234",
+  "source_description": "File with alphabet and numbers",
+  "target_description": "File with 'XYZ' added + copied content",
+  "delta_description": "Combined ADD+COPY instructions (modes 0-5, entries 163-234)",
+  "test_type": "targeted_positive",
+  "codetable_range": "163-234",
+  "instruction_type": "ADD+COPY"
+}

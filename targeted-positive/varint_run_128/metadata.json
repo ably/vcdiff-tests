@@ -1,0 +1,11 @@
+{
+  "description": "RUN instruction with 128 bytes (varint boundary test)",
+  "source_description": "Empty file",
+  "target_description": "File with 128 repetitions of byte 0x58",
+  "delta_description": "Single RUN instruction repeating byte 128 times",
+  "test_type": "targeted_positive",
+  "varint_boundary": true,
+  "byte_count": 128,
+  "instruction_type": "RUN",
+  "repeated_byte": "0x58"
+}

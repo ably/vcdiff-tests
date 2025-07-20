@@ -1,0 +1,11 @@
+{
+  "description": "RUN instruction with 0 bytes (varint boundary test)",
+  "source_description": "Empty file",
+  "target_description": "File with 0 repetitions of byte N/A (empty)",
+  "delta_description": "Single RUN instruction repeating byte 0 times",
+  "test_type": "targeted_positive",
+  "varint_boundary": true,
+  "byte_count": 0,
+  "instruction_type": "RUN",
+  "repeated_byte": "N/A (empty)"
+}

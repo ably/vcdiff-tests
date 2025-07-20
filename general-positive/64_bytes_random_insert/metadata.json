@@ -1,0 +1,11 @@
+{
+  "description": "General positive test: 64_bytes_random with insert modification",
+  "source_description": "Base file: 64_bytes_random",
+  "target_description": "Modified with insert (~25% change)",
+  "delta_description": "VCDIFF delta for insert modification",
+  "test_type": "general_positive",
+  "base_file_type": "binary",
+  "modification_type": "insert",
+  "base_size": 64,
+  "target_size": 80
+}

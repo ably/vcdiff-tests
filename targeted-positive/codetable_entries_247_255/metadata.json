@@ -1,0 +1,9 @@
+{
+  "description": "Combined COPY+ADD instruction test for codetable entries 247-255",
+  "source_description": "File with 'COPYDATA' text",
+  "target_description": "File with copied content + 'X' added",
+  "delta_description": "Combined COPY+ADD instructions (entries 247-255)",
+  "test_type": "targeted_positive",
+  "codetable_range": "247-255", 
+  "instruction_type": "COPY+ADD"
+}

@@ -1,0 +1,11 @@
+{
+  "description": "General positive test: 64k_bytes_random with append modification",
+  "source_description": "Base file: 64k_bytes_random",
+  "target_description": "Modified with append (~25% change)",
+  "delta_description": "VCDIFF delta for append modification",
+  "test_type": "general_positive",
+  "base_file_type": "binary",
+  "modification_type": "append",
+  "base_size": 65536,
+  "target_size": 81920
+}

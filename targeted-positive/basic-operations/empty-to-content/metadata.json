@@ -1,0 +1,21 @@
+{
+  "name": "Empty to Content", 
+  "description": "Test transforming empty source to non-empty target using ADD instruction",
+  "category": "basic-operations",
+  "expected_behavior": "success",
+  "test_objectives": [
+    "Verify ADD instruction when source is empty",
+    "Verify handling of zero-length source file",
+    "Verify VCD_TARGET window indicator",
+    "Verify VCD_ADLER32 checksum validation",
+    "Verify new data section parsing"
+  ],
+  "expected_properties": {
+    "source_size": 0,
+    "target_size": 512,
+    "has_checksum": true,
+    "instruction_count": 1,
+    "window_count": 1,
+    "primary_instruction": "ADD"
+  }
+}
