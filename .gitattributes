@@ -1,0 +1,4 @@
+# Treat all test data files as binary to prevent line ending conversions on Windows, macOS or linux
+**/delta.vcdiff binary
+**/source binary
+**/target binary
