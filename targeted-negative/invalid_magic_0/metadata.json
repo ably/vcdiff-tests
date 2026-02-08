@@ -1,5 +1,5 @@
 {
-  "description": "Invalid magic bytes: d6c3c401",
+  "description": "Invalid magic bytes: third magic byte is c5 instead of c4",
   "source_description": "Test source data",
   "target_description": "Should not be reached - decoder should reject input",
   "delta_description": "Invalid VCDIFF data designed to trigger specific error",
