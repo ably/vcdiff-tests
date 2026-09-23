@@ -1,0 +1,25 @@
+{
+  "name": "Near cache holding address 0",
+  "description": "COPY instructions addressed through a near cache slot whose cached address is 0",
+  "category": "address-cache",
+  "test_type": "targeted_positive",
+  "expected_behavior": "success",
+  "test_objectives": [
+    "Verify the near cache is zero-filled at the start of a window (RFC 3284 section 5.1)",
+    "Verify address 0 is a usable near cache entry rather than an 'uninitialized' slot",
+    "Verify near modes 2 and 3 resolve to near[slot] + offset"
+  ],
+  "expected_properties": {
+    "source_size": 64,
+    "target_size": 24,
+    "has_checksum": false,
+    "instruction_count": 3,
+    "window_count": 1,
+    "primary_instruction": "COPY",
+    "addressing_modes": [
+      0,
+      2,
+      3
+    ]
+  }
+}

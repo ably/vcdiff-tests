@@ -55,8 +55,8 @@ Each test case consists of:
 
 ## Test Statistics
 
-The current test suite includes **85 tests** across all categories:
-- **32 targeted-positive tests**: 4 basic operations + 21 varint boundary tests + 6 codetable tests + 1 empty files test
+The current test suite includes **88 tests** across all categories:
+- **35 targeted-positive tests**: 4 basic operations + 21 varint boundary tests + 6 codetable tests + 3 address cache tests + 1 empty files test
 - **20 general-positive tests**: 5 base file types × 4 modification types each
 - **33 targeted-negative tests**: Comprehensive invalid input validation
 
@@ -64,6 +64,12 @@ The current test suite includes **85 tests** across all categories:
 - **ADD instruction tests** (7): `varint_add_0` through `varint_add_2097152`
 - **COPY instruction tests** (7): `varint_copy_0` through `varint_copy_2097152`  
 - **RUN instruction tests** (7): `varint_run_0` through `varint_run_2097152`
+
+### Address Cache Tests (3 tests)
+- `address_cache_near_zero`: near modes addressing through a slot whose cached address is 0
+- `address_cache_same_modes`: same modes 6, 7 and 8, one per block of the same cache
+- `address_cache_same_high_addresses`: same modes for addresses at or above `s_same * 256`,
+  which are cached at index `addr % (s_same * 256)` rather than at `addr`
 
 ### Codetable Tests (6 tests)
 - `codetable_entry_0`: RUN instruction (entry 0)
