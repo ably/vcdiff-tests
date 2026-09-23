@@ -1,0 +1,26 @@
+{
+  "name": "Same cache with addresses above the cache size",
+  "description": "COPY instructions addressed through the same cache for addresses at or above s_same * 256",
+  "category": "address-cache",
+  "test_type": "targeted_positive",
+  "expected_behavior": "success",
+  "test_objectives": [
+    "Verify the same cache stores an address at index address % (s_same * 256)",
+    "Verify addresses above the same cache size stay addressable (1000, 2000 and 3000)",
+    "Verify a mis-sized same cache is caught: it resolves these addresses to 0 without raising"
+  ],
+  "expected_properties": {
+    "source_size": 4096,
+    "target_size": 48,
+    "has_checksum": false,
+    "instruction_count": 6,
+    "window_count": 1,
+    "primary_instruction": "COPY",
+    "addressing_modes": [
+      0,
+      6,
+      7,
+      8
+    ]
+  }
+}

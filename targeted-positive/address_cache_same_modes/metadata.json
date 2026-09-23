@@ -1,0 +1,26 @@
+{
+  "name": "Same cache modes 6-8",
+  "description": "COPY instructions addressed through each of the three same cache blocks",
+  "category": "address-cache",
+  "test_type": "targeted_positive",
+  "expected_behavior": "success",
+  "test_objectives": [
+    "Verify the same cache is read as same[(mode - 6) * 256 + byte]",
+    "Verify all three same cache blocks (modes 6, 7 and 8) are populated by cache updates",
+    "Verify a same cache address is a single raw byte, not a varint"
+  ],
+  "expected_properties": {
+    "source_size": 1024,
+    "target_size": 48,
+    "has_checksum": false,
+    "instruction_count": 6,
+    "window_count": 1,
+    "primary_instruction": "COPY",
+    "addressing_modes": [
+      0,
+      6,
+      7,
+      8
+    ]
+  }
+}
